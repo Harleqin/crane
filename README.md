@@ -1,6 +1,7 @@
 # Crane
 
 [![Build Status](https://travis-ci.org/eudoxia0/crane.svg?branch=master)](https://travis-ci.org/eudoxia0/crane)
+[![Quicklisp](http://quickdocs.org/badge/crane.svg)](http://quickdocs.org/crane/)
 
 Crane is an ORM for Common Lisp, providing a simple bridge between CLOS and
 relational databases, and out of the box migrations.
@@ -52,7 +53,7 @@ environments, you might want to use [Envy](https://github.com/fukamachi/envy).
 
 ```lisp
 (let ((instance (create 'ship :name "Dalliance"
-                              :tonnage "77")))
+                              :tonnage 77)))
   ;; FIXME: It's back luck to rename a ship
   (setf (name instance) "Serenity")
   ;; Expand the cargo hold
